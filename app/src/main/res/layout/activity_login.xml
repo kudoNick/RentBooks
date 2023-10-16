@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    tools:viewBindingIgnore="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/imgLogo"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:text=""
+        android:id="@+id/edtUserName"
+        android:inputType="text"
+        android:hint="Tên đăng nhập"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:text=""
+        android:id="@+id/edtPass"
+        app:passwordToggleEnabled="true"
+        android:inputType="textPassword"
+        android:hint="mật khẩu"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/chkLuuTT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duy trì đăng nhập"></CheckBox>
+
+    <TextView
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/tvTrangThai"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="logIn"
+        android:id="@+id/btnLogIn"
+        android:text="Đăng nhập"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="signUp"
+        android:id="@+id/btnSign"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="16dp"
+        android:text="Đăng ký"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>

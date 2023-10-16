@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    tools:viewBindingIgnore="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EditUserActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.DrawerLayout.AppBarOverlay"
+        >
+        <androidx.appcompat.widget.Toolbar
+            app:title="Sửa thông tin"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:popupTheme="@style/Theme.DrawerLayout.PopupOverlay"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/imgAvatar"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@mipmap/ic_launcher"
+                />
+            <EditText
+                android:id="@+id/edtName"
+                android:inputType="text"
+                android:hint="Name"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edtPhone"
+                android:inputType="phone"
+                android:hint="Số điện thoại"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edtEmail"
+                android:inputType="text"
+                android:hint="Email"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edtAddress"
+                android:inputType="text"
+                android:hint="Địa chỉ"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnEditUser"
+                android:text="Save"
+                android:layout_margin="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

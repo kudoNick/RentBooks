@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RentBooks"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.ActivityBill.BillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DetailBook.DetailBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DetailCategory.DetailCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddCategory.CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddBooks.AddBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignAcivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
